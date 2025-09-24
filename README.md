@@ -21,9 +21,9 @@ country&city:
 Finland-Helsinki(暂定， 实现Helsinki的部分再拓展到其他城市)
 
 ## 分工（暂定）
-德琦：英文报告，presentation
-曾诗蓓: html，
-孟响: presentation(也可以上), 可视化
+* 德琦：英文报告，presentation
+* 曾诗蓓: html，
+* 孟响: presentation(也可以上), 可视化
 
 
 ##
