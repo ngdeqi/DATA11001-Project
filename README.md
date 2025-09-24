@@ -14,12 +14,16 @@ Deadline: (presentation时间）2025.10.15
 
 ## 数据选择
 污染物：PM10，PM2.5, NO2, O3, CO, SO2, Pb, C6H6
-> note: Pb和C6H6没找到
+> note: Pb和C6H6没找到<br>
 > 标准：https://zh.wikipedia.org/wiki/%E6%AC%A7%E7%9B%9F%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E6%8C%87%E4%BB%A4
 
 country&city:
 Finland-Helsinki(暂定， 实现Helsinki的部分再拓展到其他城市)
 
-## 分工
+## 分工（暂定）
+德琦：英文报告，presentation
+曾诗蓓: html，
+孟响: presentation(也可以上), 可视化
+
 
 ##
