@@ -275,7 +275,7 @@ if __name__ == "__main__":
     station_file = ".\data\Air pollution data\metadata\AirQualityStation.csv"
     
     prediction_files = ".\data\predictions\predictions_station_Kaleva.csv"
-    predictions_path = r".\data\predictions"
+    predictions_path = r".\predictions"
     
     station_name = "Kaleva"     # TODO：暂且先写死
     shp_path = r"data\GIS data\borders\fi.shp"
