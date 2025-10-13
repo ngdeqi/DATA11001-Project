@@ -2,17 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="web/style.css">
 </head>
 
-<h1> HELLO WORLD</h1>
 
-<center>
-    <iframe src="https://ngdeqi.github.io/DATA11001-Project/interactive_map-PM10.html" width=95% height=200 frameBorder=0 title="interactive map"></iframe>
-</center>
+<body>
+    <h1> Air Pollution Dashboard </h1>
 
-<div></div>
 
-<iframe src="https://ngdeqi.github.io/DATA11001-Project/predictions/predictions_station_Kallio_2.html" width=95% height=300 title="prediction"></iframe>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openStation(event, 'PM2.5')">PM2.5</button>
+        <button class="tablinks" onclick="openStation(event, 'PM10')">PM10</button>
+        <button class="tablinks" onclick="openStation(event, 'SO2')">SO2</button>
+        <button class="tablinks" onclick="openStation(event, 'O3')">O3</button>
+    </div>
+
+    <div id="PM2.5" class="tabcontent">
+        <center>
+            <iframe src="interactive_map-PM2.5.html" width=100% height=600 frameBorder=0 title="map PM2.5"></iframe>
+        </center>
+    </div>
+
+    <div id="PM10" class="tabcontent">  
+        <center>
+            <iframe src="interactive_map-PM10.html" width=100% height=600 frameBorder=0 title="map PM10"></iframe>
+        </center>
+    </div>
+
+    <div id="SO2" class="tabcontent">
+        <center>
+            <iframe src="interactive_map-SO2.html" width=100% height=600 frameBorder=0 title="map SO2"></iframe>
+        </center>
+    </div>
+
+    <div id="O3" class="tabcontent">
+        <center>
+            <iframe src="interactive_map-O3.html" width=100% height=600 frameBorder=0 title="map O3"></iframe>
+        </center>
+    </div>
+
+    <script src="web/script.js"></script>
+</body>
 
 </html>
-
