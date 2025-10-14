@@ -1,7 +1,7 @@
 # Utils for data cleaning and vis.ipynb and predictions_vis.ipynb
 
 
-import branca
+import branca, os
 
 '''
 Id to pollutant mapping
@@ -44,6 +44,29 @@ cmaps = {
     )
     for pollutant, boundaries in cmap_boundaries.items()
 }
+
+def make_html_prediction_table(df, dir_predictions, return_string:bool):
+    
+    def map_html_color(val, pollutant):
+        cmap = cmaps[pollutant]
+        return f"background-color: {cmap(val)}"
+    
+    df = df.copy()
+    df = df.set_index("Date")    
+
+    styled = df.style
+    
+    for column in df.columns:
+        pollutant = column.removeprefix("Predicted_")
+        styled = styled.map(map_html_color, subset=[column], pollutant=pollutant)
+    
+    if return_string:
+        # return html as string
+        return styled.to_html()  
+    else:
+        # return .html file
+        return styled.to_html(f"{dir_predictions}/{os.path.splitext(filename)[0]}.html")
+
 
 # health_boundaries = {
     
