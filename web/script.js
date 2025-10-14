@@ -18,3 +18,5 @@ function openStation(evt, pollutant_name) {
   document.getElementById(pollutant_name).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultOpen").click();
