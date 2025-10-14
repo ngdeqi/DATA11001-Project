@@ -22,7 +22,7 @@ Define colormaps to map pollution values directly to a health index
 [Good,  Fair,   Moderate,   Poor,   Very Poor,  Extremely Poor]
 [min,   green,  yellow,     red,    purple,     max]
 '''
-BOUNDARY_COLORS = ["green", "green", "yellow", "red", "purple", "purple"]
+BOUNDARY_COLORS = ["limegreen", "limegreen", "yellow", "red", "purple", "purple"]
 BOUNDARY_HEALTH = ["Good", "Fair", "Moderate", "Poor", "Very poor", "Extremely poor"]
 
 cmap_boundaries = {
