@@ -7,39 +7,78 @@
 
 
 <body>
-    <h1> Air Pollution Dashboard </h1>
-
+    <h1 style="font-family:verdana"> Air Quality - Northern Europe</h1>
 
 
     <div class="tab">
-        <button class="tablinks" onclick="openStation(event, 'PM2.5')">PM2.5</button>
+        <button class="tablinks" onclick="openStation(event, 'PM2.5')" id="defaultOpen">PM2.5</button>
         <button class="tablinks" onclick="openStation(event, 'PM10')">PM10</button>
-        <button class="tablinks" onclick="openStation(event, 'SO2')">SO2</button>
-        <button class="tablinks" onclick="openStation(event, 'O3')">O3</button>
+        <button class="tablinks" onclick="openStation(event, 'SO2')">SO<sub>2</sub></button>
+        <button class="tablinks" onclick="openStation(event, 'O3')">O<sub>3</sub></button>
+        <button class="tablinks" onclick="openStation(event, 'CO')">CO</button>
+        <button class="tablinks" onclick="openStation(event, 'C6H6')">C<sub>6</sub>H<sub>6</sub></button>
+        <button class="tablinks" onclick="openStation(event, 'About')">About pollutants</button>
+
     </div>
 
     <div id="PM2.5" class="tabcontent">
         <center>
-            <iframe src="interactive_map-PM2.5.html" width=100% height=600 frameBorder=0 title="map PM2.5"></iframe>
+            <iframe src="interactive_map-PM2.5.html" width=100% height=450 frameBorder=0 title="map PM2.5"></iframe>
         </center>
     </div>
 
     <div id="PM10" class="tabcontent">  
         <center>
-            <iframe src="interactive_map-PM10.html" width=100% height=600 frameBorder=0 title="map PM10"></iframe>
+            <iframe src="interactive_map-PM10.html" width=100% height=450 frameBorder=0 title="map PM10"></iframe>
         </center>
     </div>
 
     <div id="SO2" class="tabcontent">
         <center>
-            <iframe src="interactive_map-SO2.html" width=100% height=600 frameBorder=0 title="map SO2"></iframe>
+            <iframe src="interactive_map-SO2.html" width=100% height=450 frameBorder=0 title="map SO2"></iframe>
         </center>
     </div>
 
     <div id="O3" class="tabcontent">
         <center>
-            <iframe src="interactive_map-O3.html" width=100% height=600 frameBorder=0 title="map O3"></iframe>
+            <iframe src="interactive_map-O3.html" width=100% height=450 frameBorder=0 title="map O3"></iframe>
         </center>
+    </div>
+
+    <div id="CO" class="tabcontent">
+        <center>
+            <iframe src="interactive_map-CO.html" width=100% height=450 frameBorder=0 title="map CO"></iframe>
+        </center>
+    </div>
+
+    <div id="C6H6" class="tabcontent">
+        <center>
+            <iframe src="interactive_map-C6H6.html" width=100% height=450 frameBorder=0 title="map C6H6"></iframe>
+        </center>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <p>The pollutants displayed are selected based on recommendations by the 2008/50/EC EU directive. Their impacts are as follows:</p>
+
+        <ul>
+            <li> 
+                <b>PM10</b> and <b>PM2.5</b> are airborne particles with diameters of 10 and 2.5 micrometres respectively. Due to their small size, they can enter the body via inhalation and accumulate in internal organs.
+            </li>
+            <li>
+                <b>SO<sub>2</sub></b> (sulphur dioxide) is a byproduct of the combustion of sulphur-containing fuels, is a component of acid rain which raises the acidity level of soils, hurting agriculture, and land and aquatic systems.
+            </li>
+            <li>
+                <b>CO</b> (carbon monoxide) is a colourless and odourless gas, diminishes the human body’s ability to absorb oxygen and in high concentrations, results in death
+            </li> 
+            <li>
+                <b>C<sub>6</sub>H<sub>6</sub></b> (benzene) is carcinogenic and is released by using petroleum products containing it, as well as smoking
+            </li>
+            <li>
+                <b>O<sup>3</sup></b> (ground level ozone) is a product of reactions between oxides of nitrogen and volatile organic compounds, can inflame the respiratory system and oxidise other pollutants in the air to create smog. 
+            </li>
+
+        </ul>
+
     </div>
 
     <script src="web/script.js"></script>
