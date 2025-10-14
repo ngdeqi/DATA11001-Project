@@ -66,8 +66,3 @@ def make_html_prediction_table(df, dir_predictions, return_string:bool):
     else:
         # return .html file
         return styled.to_html(f"{dir_predictions}/{os.path.splitext(filename)[0]}.html")
-
-
-# health_boundaries = {
-    
-# }
