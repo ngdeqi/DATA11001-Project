@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_7aee66edd58310624718cd868876d149 {
+                #map_8d358dc53e412d2bb1948681bc46d4a1 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -62,14 +62,14 @@
     
     <h1 style="position:absolute;z-index:100000;left:20vw" ><b>Pb Concentration (ug/m<sup>3</sup>)</b></h1>
     
-            <div class="folium-map" id="map_7aee66edd58310624718cd868876d149" ></div>
+            <div class="folium-map" id="map_8d358dc53e412d2bb1948681bc46d4a1" ></div>
         
 </body>
 <script>
     
     
-            var map_7aee66edd58310624718cd868876d149 = L.map(
-                "map_7aee66edd58310624718cd868876d149",
+            var map_8d358dc53e412d2bb1948681bc46d4a1 = L.map(
+                "map_8d358dc53e412d2bb1948681bc46d4a1",
                 {
                     center: [60.1699, 24.9384],
                     crs: L.CRS.EPSG3857,
@@ -86,7 +86,7 @@
 
         
     
-            var tile_layer_3a7f9f8a7fbc043d8456b6f8ef860273 = L.tileLayer(
+            var tile_layer_b6a1f305224468266b6c3f2a846132a3 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -103,7 +103,7 @@
             );
         
     
-            tile_layer_3a7f9f8a7fbc043d8456b6f8ef860273.addTo(map_7aee66edd58310624718cd868876d149);
+            tile_layer_b6a1f305224468266b6c3f2a846132a3.addTo(map_8d358dc53e412d2bb1948681bc46d4a1);
         
     
             L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
@@ -113,7 +113,7 @@
                     return newdate.format("YYYY/MM/DD HH:MM:SS");
                 }
             });
-            map_7aee66edd58310624718cd868876d149.timeDimension = L.timeDimension(
+            map_8d358dc53e412d2bb1948681bc46d4a1.timeDimension = L.timeDimension(
                 {
                     period: "PT1H",
                 }
@@ -134,7 +134,7 @@
 },
 }
             );
-            map_7aee66edd58310624718cd868876d149.addControl(this.timeDimensionControl);
+            map_8d358dc53e412d2bb1948681bc46d4a1.addControl(this.timeDimensionControl);
 
             var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": []}, {
                     pointToLayer: function (feature, latLng) {
@@ -170,14 +170,14 @@
                     }
                 })
 
-            var timestamped_geo_json_527054605048f28f1a65b5dacc792f0d = L.timeDimension.layer.geoJson(
+            var timestamped_geo_json_768593acb9e88e47c797e1d36290db39 = L.timeDimension.layer.geoJson(
                 geoJsonLayer,
                 {
                     updateTimeDimension: true,
                     addlastPoint: true,
                     duration: "P2M",
                 }
-            ).addTo(map_7aee66edd58310624718cd868876d149);
+            ).addTo(map_8d358dc53e412d2bb1948681bc46d4a1);
         
 </script>
 </html>
